@@ -1,0 +1,20 @@
+#!/bin/sh
+
+cd "$(dirname "$0")/.."
+
+[ -z ${PWD:+PWD} ] || [ "$PWD" != "$(pwd)" ] && export PWD="$(pwd)"
+
+echo 'Cleaning up...'
+
+. "$PWD/bin/clean"
+
+echo '
+Building...'
+
+printf 'Creating `./dist` artifact ... '
+
+cp -R "$PWD/src" "$PWD/dist"
+
+[ $? -ne 0 ] && echo 'failed.' && exit 1
+
+echo 'success.'
