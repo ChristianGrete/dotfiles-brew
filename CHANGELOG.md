@@ -6,8 +6,12 @@ The format is based on [Keep a Changelog][keep-a-changelog-url] and this project
 
 ## [Unreleased]
 
-### Added
+### Unmerged
+- [develop]
 
+## [1.0.0]
+
+### Added
 - chore(git): setup excludes and commit message template [[#1](https://github.com/ChristianGrete/dotfiles-brew/pull/1)]
 - style(*): setup editors [[#2](https://github.com/ChristianGrete/dotfiles-brew/pull/2)]
 - feat(*): add source files [[#3](https://github.com/ChristianGrete/dotfiles-brew/pull/3)]
@@ -16,11 +20,8 @@ The format is based on [Keep a Changelog][keep-a-changelog-url] and this project
 - chore(install): install brew and brew bundle [[#6](https://github.com/ChristianGrete/dotfiles-brew/pull/6)]
 - feat(aliases): add alias for brew bundle command
 
-### Unmerged
-
-- [develop]
-
-[Unreleased]: https://github.com/ChristianGrete/dotfiles-brew/compare/1e817dc2a9c514dd297147943dba752dce6a1fa2...develop
+[Unreleased]: https://github.com/ChristianGrete/dotfiles-brew/compare/1.0.0...master
+[1.0.0]: https://github.com/ChristianGrete/dotfiles-brew/compare/1e817dc2a9c514dd297147943dba752dce6a1fa2...1.0.0
 [develop]: https://github.com/ChristianGrete/dotfiles-brew/compare/master...develop
 
 Copyright © 2018 ([MIT](LICENSE.md)) [Christian Grete](https://christiangrete.com)
