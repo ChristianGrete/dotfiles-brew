@@ -1,0 +1,51 @@
+if ! available brew
+  then
+    echo 'Installing Homebrew...'
+    echo
+
+    # check installation deps
+
+    for dependency in curl ruby
+      do
+        if ! available $dependency
+          then
+            echo '-- Error! Dependency verification failed.' >&2
+            echo
+            exit 1
+        fi
+    done
+
+    unset dependency
+
+    # install brew
+
+    ruby -e $(curl -fLSs https://raw.githubusercontent.com/Homebrew/install/master/install)
+
+    if [ $? -ne 0 ]
+      then
+        echo '-- Error! Unable to install Homebrew.' >&2
+        echo
+        exit 1
+    fi
+else
+  echo 'Updating Homebrew...'
+  echo
+
+  # update brew itself
+
+  brew update >/dev/null 2>&1
+
+  echo 'Upgrading outdated brews...'
+  echo
+
+  # update brews
+
+  brew upgrade >/dev/null 2>&1
+
+  # uninstall old formulae
+
+  brew cleanup >/dev/null 2>&1
+fi
+
+# install caskroom after brew installation
+brew tap caskroom/cask
