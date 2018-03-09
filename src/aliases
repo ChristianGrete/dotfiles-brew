@@ -1,6 +1,9 @@
 # Shortcut for `brew` command
 alias b='command brew'
 
+# Shortcut for `brew bundle` command
+alias bb='b bundle'
+
 # Shortcut to install a specific Homebrew package
 alias bi='b install'
 

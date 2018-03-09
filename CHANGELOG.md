@@ -14,6 +14,7 @@ The format is based on [Keep a Changelog][keep-a-changelog-url] and this project
 - chore(*): add task binaries [[#4](https://github.com/ChristianGrete/dotfiles-brew/pull/4)]
 - docs(readme): update readme file [[#5](https://github.com/ChristianGrete/dotfiles-brew/pull/5)]
 - chore(install): install brew and brew bundle [[#6](https://github.com/ChristianGrete/dotfiles-brew/pull/6)]
+- feat(aliases): add alias for brew bundle command
 
 ### Unmerged
 
